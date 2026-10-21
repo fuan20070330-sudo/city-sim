@@ -1,5 +1,8 @@
 # 城智演 CITYWEAVE
 
+**在线演示：** https://fuan20070330-sudo.github.io/city-sim/
+**源码仓库：** https://github.com/fuan20070330-sudo/city-sim
+
 城市应急多智能体调度推演平台。面向中国大学生计算机设计大赛的软件应用与开发、人工智能应用、信息可视化、智慧城市等方向。
 
 项目为 **纯静态前端**：无需地图密钥、无需后端、无需 GPU，也不依赖真实无人机或车辆。全部核心能力在浏览器内完成，可直接部署到 GitHub Pages。仿真推进与路径计算运行在 Web Worker 中，Canvas 负责城市态势可视化。
@@ -192,7 +195,7 @@ Settings → Pages → Build and deployment → Source: GitHub Actions
 推送 `main` 后访问：
 
 ```text
-https://<github-user>.github.io/city-sim/
+https://fuan20070330-sudo.github.io/city-sim/
 ```
 
 ## 已知限制
