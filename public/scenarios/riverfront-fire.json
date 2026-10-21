@@ -1,0 +1,3093 @@
+{
+  "version": 1,
+  "id": "riverfront-fire-response",
+  "name": "滨江核心区 · 火灾链式响应",
+  "description": "双事件并发条件下，验证多智能体协同派车、断路重规划与应急资源调度。",
+  "objective": "8 分钟内完成首车到场，15 分钟内控制核心火情，并维持全城应急覆盖率不低于 70%。",
+  "city": {
+    "name": "滨江核心区",
+    "width": 14.7,
+    "height": 10.2,
+    "nodes": [
+      {
+        "id": "N-0-0",
+        "label": "A01",
+        "x": 1,
+        "y": 1,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-1-0",
+        "label": "A02",
+        "x": 2.02,
+        "y": 1,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-2-0",
+        "label": "A03",
+        "x": 3.04,
+        "y": 1,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-3-0",
+        "label": "A04",
+        "x": 4.0600000000000005,
+        "y": 1,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-4-0",
+        "label": "A05",
+        "x": 5.08,
+        "y": 1,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-5-0",
+        "label": "A06",
+        "x": 6.1,
+        "y": 1,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-6-0",
+        "label": "A07",
+        "x": 7.12,
+        "y": 1,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-7-0",
+        "label": "A08",
+        "x": 8.14,
+        "y": 1,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-8-0",
+        "label": "A09",
+        "x": 9.16,
+        "y": 1,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-9-0",
+        "label": "A10",
+        "x": 10.18,
+        "y": 1,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-10-0",
+        "label": "A11",
+        "x": 11.2,
+        "y": 1,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-11-0",
+        "label": "A12",
+        "x": 12.22,
+        "y": 1,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-12-0",
+        "label": "A13",
+        "x": 13.24,
+        "y": 1,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-0-1",
+        "label": "B01",
+        "x": 1,
+        "y": 1.94,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-1-1",
+        "label": "B02",
+        "x": 2.02,
+        "y": 1.94,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-2-1",
+        "label": "B03",
+        "x": 3.04,
+        "y": 1.94,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-3-1",
+        "label": "B04",
+        "x": 4.0600000000000005,
+        "y": 1.94,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-4-1",
+        "label": "B05",
+        "x": 5.08,
+        "y": 1.94,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-5-1",
+        "label": "B06",
+        "x": 6.1,
+        "y": 1.94,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-6-1",
+        "label": "B07",
+        "x": 7.12,
+        "y": 1.94,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-7-1",
+        "label": "B08",
+        "x": 8.14,
+        "y": 1.94,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-8-1",
+        "label": "B09",
+        "x": 9.16,
+        "y": 1.94,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-9-1",
+        "label": "B10",
+        "x": 10.18,
+        "y": 1.94,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-10-1",
+        "label": "B11",
+        "x": 11.2,
+        "y": 1.94,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-11-1",
+        "label": "B12",
+        "x": 12.22,
+        "y": 1.94,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-12-1",
+        "label": "B13",
+        "x": 13.24,
+        "y": 1.94,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-0-2",
+        "label": "C01",
+        "x": 1,
+        "y": 2.88,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-1-2",
+        "label": "C02",
+        "x": 2.02,
+        "y": 2.88,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-2-2",
+        "label": "C03",
+        "x": 3.04,
+        "y": 2.88,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-3-2",
+        "label": "C04",
+        "x": 4.0600000000000005,
+        "y": 2.88,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-4-2",
+        "label": "C05",
+        "x": 5.08,
+        "y": 2.88,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-5-2",
+        "label": "C06",
+        "x": 6.1,
+        "y": 2.88,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-6-2",
+        "label": "C07",
+        "x": 7.12,
+        "y": 2.88,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-7-2",
+        "label": "C08",
+        "x": 8.14,
+        "y": 2.88,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-8-2",
+        "label": "C09",
+        "x": 9.16,
+        "y": 2.88,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-9-2",
+        "label": "C10",
+        "x": 10.18,
+        "y": 2.88,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-10-2",
+        "label": "C11",
+        "x": 11.2,
+        "y": 2.88,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-11-2",
+        "label": "C12",
+        "x": 12.22,
+        "y": 2.88,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-12-2",
+        "label": "C13",
+        "x": 13.24,
+        "y": 2.88,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-0-3",
+        "label": "D01",
+        "x": 1,
+        "y": 3.82,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-1-3",
+        "label": "D02",
+        "x": 2.02,
+        "y": 3.82,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-2-3",
+        "label": "D03",
+        "x": 3.04,
+        "y": 3.82,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-3-3",
+        "label": "D04",
+        "x": 4.0600000000000005,
+        "y": 3.82,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-4-3",
+        "label": "D05",
+        "x": 5.08,
+        "y": 3.82,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-5-3",
+        "label": "D06",
+        "x": 6.1,
+        "y": 3.82,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-6-3",
+        "label": "D07",
+        "x": 7.12,
+        "y": 3.82,
+        "district": "科创智造园"
+      },
+      {
+        "id": "N-7-3",
+        "label": "D08",
+        "x": 8.14,
+        "y": 3.82,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-8-3",
+        "label": "D09",
+        "x": 9.16,
+        "y": 3.82,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-9-3",
+        "label": "D10",
+        "x": 10.18,
+        "y": 3.82,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-10-3",
+        "label": "D11",
+        "x": 11.2,
+        "y": 3.82,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-11-3",
+        "label": "D12",
+        "x": 12.22,
+        "y": 3.82,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-12-3",
+        "label": "D13",
+        "x": 13.24,
+        "y": 3.82,
+        "district": "滨江商务区"
+      },
+      {
+        "id": "N-0-4",
+        "label": "E01",
+        "x": 1,
+        "y": 4.76,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-1-4",
+        "label": "E02",
+        "x": 2.02,
+        "y": 4.76,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-2-4",
+        "label": "E03",
+        "x": 3.04,
+        "y": 4.76,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-3-4",
+        "label": "E04",
+        "x": 4.0600000000000005,
+        "y": 4.76,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-4-4",
+        "label": "E05",
+        "x": 5.08,
+        "y": 4.76,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-5-4",
+        "label": "E06",
+        "x": 6.1,
+        "y": 4.76,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-6-4",
+        "label": "E07",
+        "x": 7.12,
+        "y": 4.76,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-7-4",
+        "label": "E08",
+        "x": 8.14,
+        "y": 4.76,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-8-4",
+        "label": "E09",
+        "x": 9.16,
+        "y": 4.76,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-9-4",
+        "label": "E10",
+        "x": 10.18,
+        "y": 4.76,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-10-4",
+        "label": "E11",
+        "x": 11.2,
+        "y": 4.76,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-11-4",
+        "label": "E12",
+        "x": 12.22,
+        "y": 4.76,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-12-4",
+        "label": "E13",
+        "x": 13.24,
+        "y": 4.76,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-0-5",
+        "label": "F01",
+        "x": 1,
+        "y": 5.699999999999999,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-1-5",
+        "label": "F02",
+        "x": 2.02,
+        "y": 5.699999999999999,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-2-5",
+        "label": "F03",
+        "x": 3.04,
+        "y": 5.699999999999999,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-3-5",
+        "label": "F04",
+        "x": 4.0600000000000005,
+        "y": 5.699999999999999,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-4-5",
+        "label": "F05",
+        "x": 5.08,
+        "y": 5.699999999999999,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-5-5",
+        "label": "F06",
+        "x": 6.1,
+        "y": 5.699999999999999,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-6-5",
+        "label": "F07",
+        "x": 7.12,
+        "y": 5.699999999999999,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-7-5",
+        "label": "F08",
+        "x": 8.14,
+        "y": 5.699999999999999,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-8-5",
+        "label": "F09",
+        "x": 9.16,
+        "y": 5.699999999999999,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-9-5",
+        "label": "F10",
+        "x": 10.18,
+        "y": 5.699999999999999,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-10-5",
+        "label": "F11",
+        "x": 11.2,
+        "y": 5.699999999999999,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-11-5",
+        "label": "F12",
+        "x": 12.22,
+        "y": 5.699999999999999,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-12-5",
+        "label": "F13",
+        "x": 13.24,
+        "y": 5.699999999999999,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-0-6",
+        "label": "G01",
+        "x": 1,
+        "y": 6.64,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-1-6",
+        "label": "G02",
+        "x": 2.02,
+        "y": 6.64,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-2-6",
+        "label": "G03",
+        "x": 3.04,
+        "y": 6.64,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-3-6",
+        "label": "G04",
+        "x": 4.0600000000000005,
+        "y": 6.64,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-4-6",
+        "label": "G05",
+        "x": 5.08,
+        "y": 6.64,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-5-6",
+        "label": "G06",
+        "x": 6.1,
+        "y": 6.64,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-6-6",
+        "label": "G07",
+        "x": 7.12,
+        "y": 6.64,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-7-6",
+        "label": "G08",
+        "x": 8.14,
+        "y": 6.64,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-8-6",
+        "label": "G09",
+        "x": 9.16,
+        "y": 6.64,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-9-6",
+        "label": "G10",
+        "x": 10.18,
+        "y": 6.64,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-10-6",
+        "label": "G11",
+        "x": 11.2,
+        "y": 6.64,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-11-6",
+        "label": "G12",
+        "x": 12.22,
+        "y": 6.64,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-12-6",
+        "label": "G13",
+        "x": 13.24,
+        "y": 6.64,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-0-7",
+        "label": "H01",
+        "x": 1,
+        "y": 7.58,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-1-7",
+        "label": "H02",
+        "x": 2.02,
+        "y": 7.58,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-2-7",
+        "label": "H03",
+        "x": 3.04,
+        "y": 7.58,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-3-7",
+        "label": "H04",
+        "x": 4.0600000000000005,
+        "y": 7.58,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-4-7",
+        "label": "H05",
+        "x": 5.08,
+        "y": 7.58,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-5-7",
+        "label": "H06",
+        "x": 6.1,
+        "y": 7.58,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-6-7",
+        "label": "H07",
+        "x": 7.12,
+        "y": 7.58,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-7-7",
+        "label": "H08",
+        "x": 8.14,
+        "y": 7.58,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-8-7",
+        "label": "H09",
+        "x": 9.16,
+        "y": 7.58,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-9-7",
+        "label": "H10",
+        "x": 10.18,
+        "y": 7.58,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-10-7",
+        "label": "H11",
+        "x": 11.2,
+        "y": 7.58,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-11-7",
+        "label": "H12",
+        "x": 12.22,
+        "y": 7.58,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-12-7",
+        "label": "H13",
+        "x": 13.24,
+        "y": 7.58,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-0-8",
+        "label": "I01",
+        "x": 1,
+        "y": 8.52,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-1-8",
+        "label": "I02",
+        "x": 2.02,
+        "y": 8.52,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-2-8",
+        "label": "I03",
+        "x": 3.04,
+        "y": 8.52,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-3-8",
+        "label": "I04",
+        "x": 4.0600000000000005,
+        "y": 8.52,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-4-8",
+        "label": "I05",
+        "x": 5.08,
+        "y": 8.52,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-5-8",
+        "label": "I06",
+        "x": 6.1,
+        "y": 8.52,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-6-8",
+        "label": "I07",
+        "x": 7.12,
+        "y": 8.52,
+        "district": "老城生活区"
+      },
+      {
+        "id": "N-7-8",
+        "label": "I08",
+        "x": 8.14,
+        "y": 8.52,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-8-8",
+        "label": "I09",
+        "x": 9.16,
+        "y": 8.52,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-9-8",
+        "label": "I10",
+        "x": 10.18,
+        "y": 8.52,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-10-8",
+        "label": "I11",
+        "x": 11.2,
+        "y": 8.52,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-11-8",
+        "label": "I12",
+        "x": 12.22,
+        "y": 8.52,
+        "district": "滨江生态带"
+      },
+      {
+        "id": "N-12-8",
+        "label": "I13",
+        "x": 13.24,
+        "y": 8.52,
+        "district": "滨江生态带"
+      }
+    ],
+    "edges": [
+      {
+        "id": "R-H-0-0",
+        "from": "N-0-0",
+        "to": "N-1-0",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 0.98,
+        "name": "A1—A2"
+      },
+      {
+        "id": "R-H-0-1",
+        "from": "N-1-0",
+        "to": "N-2-0",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.01,
+        "name": "A2—A3"
+      },
+      {
+        "id": "R-H-0-2",
+        "from": "N-2-0",
+        "to": "N-3-0",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.04,
+        "name": "A3—A4"
+      },
+      {
+        "id": "R-H-0-3",
+        "from": "N-3-0",
+        "to": "N-4-0",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.07,
+        "name": "A4—A5"
+      },
+      {
+        "id": "R-H-0-4",
+        "from": "N-4-0",
+        "to": "N-5-0",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.1,
+        "name": "A5—A6"
+      },
+      {
+        "id": "R-H-0-5",
+        "from": "N-5-0",
+        "to": "N-6-0",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.13,
+        "name": "A6—A7"
+      },
+      {
+        "id": "R-H-0-6",
+        "from": "N-6-0",
+        "to": "N-7-0",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.16,
+        "name": "A7—A8"
+      },
+      {
+        "id": "R-H-0-7",
+        "from": "N-7-0",
+        "to": "N-8-0",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1,
+        "name": "A8—A9"
+      },
+      {
+        "id": "R-H-0-8",
+        "from": "N-8-0",
+        "to": "N-9-0",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.03,
+        "name": "A9—A10"
+      },
+      {
+        "id": "R-H-0-9",
+        "from": "N-9-0",
+        "to": "N-10-0",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.06,
+        "name": "A10—A11"
+      },
+      {
+        "id": "R-H-0-10",
+        "from": "N-10-0",
+        "to": "N-11-0",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.09,
+        "name": "A11—A12"
+      },
+      {
+        "id": "R-H-0-11",
+        "from": "N-11-0",
+        "to": "N-12-0",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.12,
+        "name": "A12—A13"
+      },
+      {
+        "id": "R-H-1-0",
+        "from": "N-0-1",
+        "to": "N-1-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.05,
+        "name": "B1—B2"
+      },
+      {
+        "id": "R-H-1-1",
+        "from": "N-1-1",
+        "to": "N-2-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.08,
+        "name": "B2—B3"
+      },
+      {
+        "id": "R-H-1-2",
+        "from": "N-2-1",
+        "to": "N-3-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.1099999999999999,
+        "name": "B3—B4"
+      },
+      {
+        "id": "R-H-1-3",
+        "from": "N-3-1",
+        "to": "N-4-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.14,
+        "name": "B4—B5"
+      },
+      {
+        "id": "R-H-1-4",
+        "from": "N-4-1",
+        "to": "N-5-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 0.98,
+        "name": "B5—B6"
+      },
+      {
+        "id": "R-H-1-5",
+        "from": "N-5-1",
+        "to": "N-6-1",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.01,
+        "name": "B6—B7"
+      },
+      {
+        "id": "R-H-1-6",
+        "from": "N-6-1",
+        "to": "N-7-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.04,
+        "name": "B7—B8"
+      },
+      {
+        "id": "R-H-1-7",
+        "from": "N-7-1",
+        "to": "N-8-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.07,
+        "name": "B8—B9"
+      },
+      {
+        "id": "R-H-1-8",
+        "from": "N-8-1",
+        "to": "N-9-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.1,
+        "name": "B9—B10"
+      },
+      {
+        "id": "R-H-1-9",
+        "from": "N-9-1",
+        "to": "N-10-1",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.13,
+        "name": "B10—B11"
+      },
+      {
+        "id": "R-H-1-10",
+        "from": "N-10-1",
+        "to": "N-11-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.16,
+        "name": "B11—B12"
+      },
+      {
+        "id": "R-H-1-11",
+        "from": "N-11-1",
+        "to": "N-12-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1,
+        "name": "B12—B13"
+      },
+      {
+        "id": "R-H-2-0",
+        "from": "N-0-2",
+        "to": "N-1-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.12,
+        "name": "C1—C2"
+      },
+      {
+        "id": "R-H-2-1",
+        "from": "N-1-2",
+        "to": "N-2-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.15,
+        "name": "C2—C3"
+      },
+      {
+        "id": "R-H-2-2",
+        "from": "N-2-2",
+        "to": "N-3-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 0.99,
+        "name": "C3—C4"
+      },
+      {
+        "id": "R-H-2-3",
+        "from": "N-3-2",
+        "to": "N-4-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.02,
+        "name": "C4—C5"
+      },
+      {
+        "id": "R-H-2-4",
+        "from": "N-4-2",
+        "to": "N-5-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.05,
+        "name": "C5—C6"
+      },
+      {
+        "id": "R-H-2-5",
+        "from": "N-5-2",
+        "to": "N-6-2",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.08,
+        "name": "C6—C7"
+      },
+      {
+        "id": "R-H-2-6",
+        "from": "N-6-2",
+        "to": "N-7-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.1099999999999999,
+        "name": "C7—C8"
+      },
+      {
+        "id": "R-H-2-7",
+        "from": "N-7-2",
+        "to": "N-8-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.14,
+        "name": "C8—C9"
+      },
+      {
+        "id": "R-H-2-8",
+        "from": "N-8-2",
+        "to": "N-9-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 0.98,
+        "name": "C9—C10"
+      },
+      {
+        "id": "R-H-2-9",
+        "from": "N-9-2",
+        "to": "N-10-2",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.01,
+        "name": "C10—C11"
+      },
+      {
+        "id": "R-H-2-10",
+        "from": "N-10-2",
+        "to": "N-11-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.04,
+        "name": "C11—C12"
+      },
+      {
+        "id": "R-H-2-11",
+        "from": "N-11-2",
+        "to": "N-12-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.07,
+        "name": "C12—C13"
+      },
+      {
+        "id": "R-H-3-0",
+        "from": "N-0-3",
+        "to": "N-1-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1,
+        "name": "D1—D2"
+      },
+      {
+        "id": "R-H-3-1",
+        "from": "N-1-3",
+        "to": "N-2-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.03,
+        "name": "D2—D3"
+      },
+      {
+        "id": "R-H-3-2",
+        "from": "N-2-3",
+        "to": "N-3-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.06,
+        "name": "D3—D4"
+      },
+      {
+        "id": "R-H-3-3",
+        "from": "N-3-3",
+        "to": "N-4-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.09,
+        "name": "D4—D5"
+      },
+      {
+        "id": "R-H-3-4",
+        "from": "N-4-3",
+        "to": "N-5-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.12,
+        "name": "D5—D6"
+      },
+      {
+        "id": "R-H-3-5",
+        "from": "N-5-3",
+        "to": "N-6-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.15,
+        "name": "D6—D7"
+      },
+      {
+        "id": "R-H-3-6",
+        "from": "N-6-3",
+        "to": "N-7-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 0.99,
+        "name": "D7—D8"
+      },
+      {
+        "id": "R-H-3-7",
+        "from": "N-7-3",
+        "to": "N-8-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.02,
+        "name": "D8—D9"
+      },
+      {
+        "id": "R-H-3-8",
+        "from": "N-8-3",
+        "to": "N-9-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.05,
+        "name": "D9—D10"
+      },
+      {
+        "id": "R-H-3-9",
+        "from": "N-9-3",
+        "to": "N-10-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.08,
+        "name": "D10—D11"
+      },
+      {
+        "id": "R-H-3-10",
+        "from": "N-10-3",
+        "to": "N-11-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.1099999999999999,
+        "name": "D11—D12"
+      },
+      {
+        "id": "R-H-3-11",
+        "from": "N-11-3",
+        "to": "N-12-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.14,
+        "name": "D12—D13"
+      },
+      {
+        "id": "R-H-4-0",
+        "from": "N-0-4",
+        "to": "N-1-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.07,
+        "name": "E1—E2"
+      },
+      {
+        "id": "R-H-4-1",
+        "from": "N-1-4",
+        "to": "N-2-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.1,
+        "name": "E2—E3"
+      },
+      {
+        "id": "R-H-4-2",
+        "from": "N-2-4",
+        "to": "N-3-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.13,
+        "name": "E3—E4"
+      },
+      {
+        "id": "R-H-4-3",
+        "from": "N-3-4",
+        "to": "N-4-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.16,
+        "name": "E4—E5"
+      },
+      {
+        "id": "R-H-4-4",
+        "from": "N-4-4",
+        "to": "N-5-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1,
+        "name": "E5—E6"
+      },
+      {
+        "id": "R-H-4-5",
+        "from": "N-5-4",
+        "to": "N-6-4",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.03,
+        "name": "E6—E7"
+      },
+      {
+        "id": "R-H-4-6",
+        "from": "N-6-4",
+        "to": "N-7-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.06,
+        "name": "E7—E8"
+      },
+      {
+        "id": "R-H-4-7",
+        "from": "N-7-4",
+        "to": "N-8-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.09,
+        "name": "E8—E9"
+      },
+      {
+        "id": "R-H-4-8",
+        "from": "N-8-4",
+        "to": "N-9-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.12,
+        "name": "E9—E10"
+      },
+      {
+        "id": "R-H-4-9",
+        "from": "N-9-4",
+        "to": "N-10-4",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.15,
+        "name": "E10—E11"
+      },
+      {
+        "id": "R-H-4-10",
+        "from": "N-10-4",
+        "to": "N-11-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 0.99,
+        "name": "E11—E12"
+      },
+      {
+        "id": "R-H-4-11",
+        "from": "N-11-4",
+        "to": "N-12-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.02,
+        "name": "E12—E13"
+      },
+      {
+        "id": "R-H-5-0",
+        "from": "N-0-5",
+        "to": "N-1-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.14,
+        "name": "F1—F2"
+      },
+      {
+        "id": "R-H-5-1",
+        "from": "N-1-5",
+        "to": "N-2-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 0.98,
+        "name": "F2—F3"
+      },
+      {
+        "id": "R-H-5-2",
+        "from": "N-2-5",
+        "to": "N-3-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.01,
+        "name": "F3—F4"
+      },
+      {
+        "id": "R-H-5-3",
+        "from": "N-3-5",
+        "to": "N-4-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.04,
+        "name": "F4—F5"
+      },
+      {
+        "id": "R-H-5-4",
+        "from": "N-4-5",
+        "to": "N-5-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.07,
+        "name": "F5—F6"
+      },
+      {
+        "id": "R-H-5-5",
+        "from": "N-5-5",
+        "to": "N-6-5",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.1,
+        "name": "F6—F7"
+      },
+      {
+        "id": "R-H-5-6",
+        "from": "N-6-5",
+        "to": "N-7-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.13,
+        "name": "F7—F8"
+      },
+      {
+        "id": "R-H-5-7",
+        "from": "N-7-5",
+        "to": "N-8-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.16,
+        "name": "F8—F9"
+      },
+      {
+        "id": "R-H-5-8",
+        "from": "N-8-5",
+        "to": "N-9-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1,
+        "name": "F9—F10"
+      },
+      {
+        "id": "R-H-5-9",
+        "from": "N-9-5",
+        "to": "N-10-5",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.03,
+        "name": "F10—F11"
+      },
+      {
+        "id": "R-H-5-10",
+        "from": "N-10-5",
+        "to": "N-11-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.06,
+        "name": "F11—F12"
+      },
+      {
+        "id": "R-H-5-11",
+        "from": "N-11-5",
+        "to": "N-12-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.09,
+        "name": "F12—F13"
+      },
+      {
+        "id": "R-H-6-0",
+        "from": "N-0-6",
+        "to": "N-1-6",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.02,
+        "name": "G1—G2"
+      },
+      {
+        "id": "R-H-6-1",
+        "from": "N-1-6",
+        "to": "N-2-6",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.05,
+        "name": "G2—G3"
+      },
+      {
+        "id": "R-H-6-2",
+        "from": "N-2-6",
+        "to": "N-3-6",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.08,
+        "name": "G3—G4"
+      },
+      {
+        "id": "R-H-6-3",
+        "from": "N-3-6",
+        "to": "N-4-6",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.1099999999999999,
+        "name": "G4—G5"
+      },
+      {
+        "id": "R-H-6-4",
+        "from": "N-4-6",
+        "to": "N-5-6",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.14,
+        "name": "G5—G6"
+      },
+      {
+        "id": "R-H-6-5",
+        "from": "N-5-6",
+        "to": "N-6-6",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 0.98,
+        "name": "G6—G7"
+      },
+      {
+        "id": "R-H-6-6",
+        "from": "N-6-6",
+        "to": "N-7-6",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.01,
+        "name": "G7—G8"
+      },
+      {
+        "id": "R-H-6-7",
+        "from": "N-7-6",
+        "to": "N-8-6",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.04,
+        "name": "G8—G9"
+      },
+      {
+        "id": "R-H-6-8",
+        "from": "N-8-6",
+        "to": "N-9-6",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.07,
+        "name": "G9—G10"
+      },
+      {
+        "id": "R-H-6-9",
+        "from": "N-9-6",
+        "to": "N-10-6",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.1,
+        "name": "G10—G11"
+      },
+      {
+        "id": "R-H-6-10",
+        "from": "N-10-6",
+        "to": "N-11-6",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.13,
+        "name": "G11—G12"
+      },
+      {
+        "id": "R-H-6-11",
+        "from": "N-11-6",
+        "to": "N-12-6",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.16,
+        "name": "G12—G13"
+      },
+      {
+        "id": "R-H-7-0",
+        "from": "N-0-7",
+        "to": "N-1-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.09,
+        "name": "H1—H2"
+      },
+      {
+        "id": "R-H-7-1",
+        "from": "N-1-7",
+        "to": "N-2-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.12,
+        "name": "H2—H3"
+      },
+      {
+        "id": "R-H-7-2",
+        "from": "N-2-7",
+        "to": "N-3-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.15,
+        "name": "H3—H4"
+      },
+      {
+        "id": "R-H-7-3",
+        "from": "N-3-7",
+        "to": "N-4-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 0.99,
+        "name": "H4—H5"
+      },
+      {
+        "id": "R-H-7-4",
+        "from": "N-4-7",
+        "to": "N-5-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.02,
+        "name": "H5—H6"
+      },
+      {
+        "id": "R-H-7-5",
+        "from": "N-5-7",
+        "to": "N-6-7",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.05,
+        "name": "H6—H7"
+      },
+      {
+        "id": "R-H-7-6",
+        "from": "N-6-7",
+        "to": "N-7-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.08,
+        "name": "H7—H8"
+      },
+      {
+        "id": "R-H-7-7",
+        "from": "N-7-7",
+        "to": "N-8-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.1099999999999999,
+        "name": "H8—H9"
+      },
+      {
+        "id": "R-H-7-8",
+        "from": "N-8-7",
+        "to": "N-9-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.14,
+        "name": "H9—H10"
+      },
+      {
+        "id": "R-H-7-9",
+        "from": "N-9-7",
+        "to": "N-10-7",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 0.98,
+        "name": "H10—H11"
+      },
+      {
+        "id": "R-H-7-10",
+        "from": "N-10-7",
+        "to": "N-11-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.01,
+        "name": "H11—H12"
+      },
+      {
+        "id": "R-H-7-11",
+        "from": "N-11-7",
+        "to": "N-12-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.04,
+        "name": "H12—H13"
+      },
+      {
+        "id": "R-H-8-0",
+        "from": "N-0-8",
+        "to": "N-1-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.16,
+        "name": "I1—I2"
+      },
+      {
+        "id": "R-H-8-1",
+        "from": "N-1-8",
+        "to": "N-2-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1,
+        "name": "I2—I3"
+      },
+      {
+        "id": "R-H-8-2",
+        "from": "N-2-8",
+        "to": "N-3-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.03,
+        "name": "I3—I4"
+      },
+      {
+        "id": "R-H-8-3",
+        "from": "N-3-8",
+        "to": "N-4-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.06,
+        "name": "I4—I5"
+      },
+      {
+        "id": "R-H-8-4",
+        "from": "N-4-8",
+        "to": "N-5-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.09,
+        "name": "I5—I6"
+      },
+      {
+        "id": "R-H-8-5",
+        "from": "N-5-8",
+        "to": "N-6-8",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.12,
+        "name": "I6—I7"
+      },
+      {
+        "id": "R-H-8-6",
+        "from": "N-6-8",
+        "to": "N-7-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.15,
+        "name": "I7—I8"
+      },
+      {
+        "id": "R-H-8-7",
+        "from": "N-7-8",
+        "to": "N-8-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 0.99,
+        "name": "I8—I9"
+      },
+      {
+        "id": "R-H-8-8",
+        "from": "N-8-8",
+        "to": "N-9-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.02,
+        "name": "I9—I10"
+      },
+      {
+        "id": "R-H-8-9",
+        "from": "N-9-8",
+        "to": "N-10-8",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 52,
+        "traffic": 1.05,
+        "name": "I10—I11"
+      },
+      {
+        "id": "R-H-8-10",
+        "from": "N-10-8",
+        "to": "N-11-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.08,
+        "name": "I11—I12"
+      },
+      {
+        "id": "R-H-8-11",
+        "from": "N-11-8",
+        "to": "N-12-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 36,
+        "traffic": 1.1099999999999999,
+        "name": "I12—I13"
+      },
+      {
+        "id": "R-V-0-0",
+        "from": "N-0-0",
+        "to": "N-0-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1,
+        "name": "1号纵路 1—2"
+      },
+      {
+        "id": "R-V-0-1",
+        "from": "N-0-1",
+        "to": "N-0-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.11,
+        "name": "1号纵路 2—3"
+      },
+      {
+        "id": "R-V-0-2",
+        "from": "N-0-2",
+        "to": "N-0-3",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1,
+        "name": "1号纵路 3—4"
+      },
+      {
+        "id": "R-V-0-3",
+        "from": "N-0-3",
+        "to": "N-0-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.11,
+        "name": "1号纵路 4—5"
+      },
+      {
+        "id": "R-V-0-4",
+        "from": "N-0-4",
+        "to": "N-0-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1,
+        "name": "1号纵路 5—6"
+      },
+      {
+        "id": "R-V-0-5",
+        "from": "N-0-5",
+        "to": "N-0-6",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.11,
+        "name": "1号纵路 6—7"
+      },
+      {
+        "id": "R-V-0-6",
+        "from": "N-0-6",
+        "to": "N-0-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1,
+        "name": "1号纵路 7—8"
+      },
+      {
+        "id": "R-V-0-7",
+        "from": "N-0-7",
+        "to": "N-0-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.11,
+        "name": "1号纵路 8—9"
+      },
+      {
+        "id": "R-V-1-0",
+        "from": "N-1-0",
+        "to": "N-1-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.05,
+        "name": "2号纵路 1—2"
+      },
+      {
+        "id": "R-V-1-1",
+        "from": "N-1-1",
+        "to": "N-1-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.16,
+        "name": "2号纵路 2—3"
+      },
+      {
+        "id": "R-V-1-2",
+        "from": "N-1-2",
+        "to": "N-1-3",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.05,
+        "name": "2号纵路 3—4"
+      },
+      {
+        "id": "R-V-1-3",
+        "from": "N-1-3",
+        "to": "N-1-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.16,
+        "name": "2号纵路 4—5"
+      },
+      {
+        "id": "R-V-1-4",
+        "from": "N-1-4",
+        "to": "N-1-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.05,
+        "name": "2号纵路 5—6"
+      },
+      {
+        "id": "R-V-1-5",
+        "from": "N-1-5",
+        "to": "N-1-6",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.16,
+        "name": "2号纵路 6—7"
+      },
+      {
+        "id": "R-V-1-6",
+        "from": "N-1-6",
+        "to": "N-1-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.05,
+        "name": "2号纵路 7—8"
+      },
+      {
+        "id": "R-V-1-7",
+        "from": "N-1-7",
+        "to": "N-1-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.16,
+        "name": "2号纵路 8—9"
+      },
+      {
+        "id": "R-V-2-0",
+        "from": "N-2-0",
+        "to": "N-2-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.1,
+        "name": "3号纵路 1—2"
+      },
+      {
+        "id": "R-V-2-1",
+        "from": "N-2-1",
+        "to": "N-2-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.21,
+        "name": "3号纵路 2—3"
+      },
+      {
+        "id": "R-V-2-2",
+        "from": "N-2-2",
+        "to": "N-2-3",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.1,
+        "name": "3号纵路 3—4"
+      },
+      {
+        "id": "R-V-2-3",
+        "from": "N-2-3",
+        "to": "N-2-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.21,
+        "name": "3号纵路 4—5"
+      },
+      {
+        "id": "R-V-2-4",
+        "from": "N-2-4",
+        "to": "N-2-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.1,
+        "name": "3号纵路 5—6"
+      },
+      {
+        "id": "R-V-2-5",
+        "from": "N-2-5",
+        "to": "N-2-6",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.21,
+        "name": "3号纵路 6—7"
+      },
+      {
+        "id": "R-V-2-6",
+        "from": "N-2-6",
+        "to": "N-2-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.1,
+        "name": "3号纵路 7—8"
+      },
+      {
+        "id": "R-V-2-7",
+        "from": "N-2-7",
+        "to": "N-2-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.21,
+        "name": "3号纵路 8—9"
+      },
+      {
+        "id": "R-V-3-0",
+        "from": "N-3-0",
+        "to": "N-3-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.15,
+        "name": "4号纵路 1—2"
+      },
+      {
+        "id": "R-V-3-1",
+        "from": "N-3-1",
+        "to": "N-3-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.04,
+        "name": "4号纵路 2—3"
+      },
+      {
+        "id": "R-V-3-2",
+        "from": "N-3-2",
+        "to": "N-3-3",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.15,
+        "name": "4号纵路 3—4"
+      },
+      {
+        "id": "R-V-3-3",
+        "from": "N-3-3",
+        "to": "N-3-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.04,
+        "name": "4号纵路 4—5"
+      },
+      {
+        "id": "R-V-3-4",
+        "from": "N-3-4",
+        "to": "N-3-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.15,
+        "name": "4号纵路 5—6"
+      },
+      {
+        "id": "R-V-3-5",
+        "from": "N-3-5",
+        "to": "N-3-6",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.04,
+        "name": "4号纵路 6—7"
+      },
+      {
+        "id": "R-V-3-6",
+        "from": "N-3-6",
+        "to": "N-3-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.15,
+        "name": "4号纵路 7—8"
+      },
+      {
+        "id": "R-V-3-7",
+        "from": "N-3-7",
+        "to": "N-3-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.04,
+        "name": "4号纵路 8—9"
+      },
+      {
+        "id": "R-V-4-0",
+        "from": "N-4-0",
+        "to": "N-4-1",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.2,
+        "name": "5号纵路 1—2"
+      },
+      {
+        "id": "R-V-4-1",
+        "from": "N-4-1",
+        "to": "N-4-2",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.09,
+        "name": "5号纵路 2—3"
+      },
+      {
+        "id": "R-V-4-2",
+        "from": "N-4-2",
+        "to": "N-4-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.2,
+        "name": "5号纵路 3—4"
+      },
+      {
+        "id": "R-V-4-3",
+        "from": "N-4-3",
+        "to": "N-4-4",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.09,
+        "name": "5号纵路 4—5"
+      },
+      {
+        "id": "R-V-4-4",
+        "from": "N-4-4",
+        "to": "N-4-5",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.2,
+        "name": "5号纵路 5—6"
+      },
+      {
+        "id": "R-V-4-5",
+        "from": "N-4-5",
+        "to": "N-4-6",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.09,
+        "name": "5号纵路 6—7"
+      },
+      {
+        "id": "R-V-4-6",
+        "from": "N-4-6",
+        "to": "N-4-7",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.2,
+        "name": "5号纵路 7—8"
+      },
+      {
+        "id": "R-V-4-7",
+        "from": "N-4-7",
+        "to": "N-4-8",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.09,
+        "name": "5号纵路 8—9"
+      },
+      {
+        "id": "R-V-5-0",
+        "from": "N-5-0",
+        "to": "N-5-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.03,
+        "name": "6号纵路 1—2"
+      },
+      {
+        "id": "R-V-5-1",
+        "from": "N-5-1",
+        "to": "N-5-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.1400000000000001,
+        "name": "6号纵路 2—3"
+      },
+      {
+        "id": "R-V-5-2",
+        "from": "N-5-2",
+        "to": "N-5-3",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.03,
+        "name": "6号纵路 3—4"
+      },
+      {
+        "id": "R-V-5-3",
+        "from": "N-5-3",
+        "to": "N-5-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.1400000000000001,
+        "name": "6号纵路 4—5"
+      },
+      {
+        "id": "R-V-5-4",
+        "from": "N-5-4",
+        "to": "N-5-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.03,
+        "name": "6号纵路 5—6"
+      },
+      {
+        "id": "R-V-5-5",
+        "from": "N-5-5",
+        "to": "N-5-6",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.1400000000000001,
+        "name": "6号纵路 6—7"
+      },
+      {
+        "id": "R-V-5-6",
+        "from": "N-5-6",
+        "to": "N-5-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.03,
+        "name": "6号纵路 7—8"
+      },
+      {
+        "id": "R-V-5-7",
+        "from": "N-5-7",
+        "to": "N-5-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.1400000000000001,
+        "name": "6号纵路 8—9"
+      },
+      {
+        "id": "R-V-6-0",
+        "from": "N-6-0",
+        "to": "N-6-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.08,
+        "name": "7号纵路 1—2"
+      },
+      {
+        "id": "R-V-6-1",
+        "from": "N-6-1",
+        "to": "N-6-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.19,
+        "name": "7号纵路 2—3"
+      },
+      {
+        "id": "R-V-6-2",
+        "from": "N-6-2",
+        "to": "N-6-3",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.08,
+        "name": "7号纵路 3—4"
+      },
+      {
+        "id": "R-V-6-3",
+        "from": "N-6-3",
+        "to": "N-6-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.19,
+        "name": "7号纵路 4—5"
+      },
+      {
+        "id": "R-V-6-4",
+        "from": "N-6-4",
+        "to": "N-6-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.08,
+        "name": "7号纵路 5—6"
+      },
+      {
+        "id": "R-V-6-5",
+        "from": "N-6-5",
+        "to": "N-6-6",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.19,
+        "name": "7号纵路 6—7"
+      },
+      {
+        "id": "R-V-6-6",
+        "from": "N-6-6",
+        "to": "N-6-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.08,
+        "name": "7号纵路 7—8"
+      },
+      {
+        "id": "R-V-6-7",
+        "from": "N-6-7",
+        "to": "N-6-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.19,
+        "name": "7号纵路 8—9"
+      },
+      {
+        "id": "R-V-7-0",
+        "from": "N-7-0",
+        "to": "N-7-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.13,
+        "name": "8号纵路 1—2"
+      },
+      {
+        "id": "R-V-7-1",
+        "from": "N-7-1",
+        "to": "N-7-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.02,
+        "name": "8号纵路 2—3"
+      },
+      {
+        "id": "R-V-7-2",
+        "from": "N-7-2",
+        "to": "N-7-3",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.13,
+        "name": "8号纵路 3—4"
+      },
+      {
+        "id": "R-V-7-3",
+        "from": "N-7-3",
+        "to": "N-7-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.02,
+        "name": "8号纵路 4—5"
+      },
+      {
+        "id": "R-V-7-4",
+        "from": "N-7-4",
+        "to": "N-7-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.13,
+        "name": "8号纵路 5—6"
+      },
+      {
+        "id": "R-V-7-5",
+        "from": "N-7-5",
+        "to": "N-7-6",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.02,
+        "name": "8号纵路 6—7"
+      },
+      {
+        "id": "R-V-7-6",
+        "from": "N-7-6",
+        "to": "N-7-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.13,
+        "name": "8号纵路 7—8"
+      },
+      {
+        "id": "R-V-7-7",
+        "from": "N-7-7",
+        "to": "N-7-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.02,
+        "name": "8号纵路 8—9"
+      },
+      {
+        "id": "R-V-8-0",
+        "from": "N-8-0",
+        "to": "N-8-1",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.18,
+        "name": "9号纵路 1—2"
+      },
+      {
+        "id": "R-V-8-1",
+        "from": "N-8-1",
+        "to": "N-8-2",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.07,
+        "name": "9号纵路 2—3"
+      },
+      {
+        "id": "R-V-8-2",
+        "from": "N-8-2",
+        "to": "N-8-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.18,
+        "name": "9号纵路 3—4"
+      },
+      {
+        "id": "R-V-8-3",
+        "from": "N-8-3",
+        "to": "N-8-4",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.07,
+        "name": "9号纵路 4—5"
+      },
+      {
+        "id": "R-V-8-4",
+        "from": "N-8-4",
+        "to": "N-8-5",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.18,
+        "name": "9号纵路 5—6"
+      },
+      {
+        "id": "R-V-8-5",
+        "from": "N-8-5",
+        "to": "N-8-6",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.07,
+        "name": "9号纵路 6—7"
+      },
+      {
+        "id": "R-V-8-6",
+        "from": "N-8-6",
+        "to": "N-8-7",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.18,
+        "name": "9号纵路 7—8"
+      },
+      {
+        "id": "R-V-8-7",
+        "from": "N-8-7",
+        "to": "N-8-8",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 48,
+        "traffic": 1.07,
+        "name": "9号纵路 8—9"
+      },
+      {
+        "id": "R-V-9-0",
+        "from": "N-9-0",
+        "to": "N-9-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.01,
+        "name": "10号纵路 1—2"
+      },
+      {
+        "id": "R-V-9-1",
+        "from": "N-9-1",
+        "to": "N-9-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.12,
+        "name": "10号纵路 2—3"
+      },
+      {
+        "id": "R-V-9-2",
+        "from": "N-9-2",
+        "to": "N-9-3",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.01,
+        "name": "10号纵路 3—4"
+      },
+      {
+        "id": "R-V-9-3",
+        "from": "N-9-3",
+        "to": "N-9-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.12,
+        "name": "10号纵路 4—5"
+      },
+      {
+        "id": "R-V-9-4",
+        "from": "N-9-4",
+        "to": "N-9-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.01,
+        "name": "10号纵路 5—6"
+      },
+      {
+        "id": "R-V-9-5",
+        "from": "N-9-5",
+        "to": "N-9-6",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.12,
+        "name": "10号纵路 6—7"
+      },
+      {
+        "id": "R-V-9-6",
+        "from": "N-9-6",
+        "to": "N-9-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.01,
+        "name": "10号纵路 7—8"
+      },
+      {
+        "id": "R-V-9-7",
+        "from": "N-9-7",
+        "to": "N-9-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.12,
+        "name": "10号纵路 8—9"
+      },
+      {
+        "id": "R-V-10-0",
+        "from": "N-10-0",
+        "to": "N-10-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.06,
+        "name": "11号纵路 1—2"
+      },
+      {
+        "id": "R-V-10-1",
+        "from": "N-10-1",
+        "to": "N-10-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.17,
+        "name": "11号纵路 2—3"
+      },
+      {
+        "id": "R-V-10-2",
+        "from": "N-10-2",
+        "to": "N-10-3",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.06,
+        "name": "11号纵路 3—4"
+      },
+      {
+        "id": "R-V-10-3",
+        "from": "N-10-3",
+        "to": "N-10-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.17,
+        "name": "11号纵路 4—5"
+      },
+      {
+        "id": "R-V-10-4",
+        "from": "N-10-4",
+        "to": "N-10-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.06,
+        "name": "11号纵路 5—6"
+      },
+      {
+        "id": "R-V-10-5",
+        "from": "N-10-5",
+        "to": "N-10-6",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.17,
+        "name": "11号纵路 6—7"
+      },
+      {
+        "id": "R-V-10-6",
+        "from": "N-10-6",
+        "to": "N-10-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.06,
+        "name": "11号纵路 7—8"
+      },
+      {
+        "id": "R-V-10-7",
+        "from": "N-10-7",
+        "to": "N-10-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.17,
+        "name": "11号纵路 8—9"
+      },
+      {
+        "id": "R-V-11-0",
+        "from": "N-11-0",
+        "to": "N-11-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.11,
+        "name": "12号纵路 1—2"
+      },
+      {
+        "id": "R-V-11-1",
+        "from": "N-11-1",
+        "to": "N-11-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1,
+        "name": "12号纵路 2—3"
+      },
+      {
+        "id": "R-V-11-2",
+        "from": "N-11-2",
+        "to": "N-11-3",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.11,
+        "name": "12号纵路 3—4"
+      },
+      {
+        "id": "R-V-11-3",
+        "from": "N-11-3",
+        "to": "N-11-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1,
+        "name": "12号纵路 4—5"
+      },
+      {
+        "id": "R-V-11-4",
+        "from": "N-11-4",
+        "to": "N-11-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.11,
+        "name": "12号纵路 5—6"
+      },
+      {
+        "id": "R-V-11-5",
+        "from": "N-11-5",
+        "to": "N-11-6",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1,
+        "name": "12号纵路 6—7"
+      },
+      {
+        "id": "R-V-11-6",
+        "from": "N-11-6",
+        "to": "N-11-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.11,
+        "name": "12号纵路 7—8"
+      },
+      {
+        "id": "R-V-11-7",
+        "from": "N-11-7",
+        "to": "N-11-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1,
+        "name": "12号纵路 8—9"
+      },
+      {
+        "id": "R-V-12-0",
+        "from": "N-12-0",
+        "to": "N-12-1",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.16,
+        "name": "13号纵路 1—2"
+      },
+      {
+        "id": "R-V-12-1",
+        "from": "N-12-1",
+        "to": "N-12-2",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.05,
+        "name": "13号纵路 2—3"
+      },
+      {
+        "id": "R-V-12-2",
+        "from": "N-12-2",
+        "to": "N-12-3",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.16,
+        "name": "13号纵路 3—4"
+      },
+      {
+        "id": "R-V-12-3",
+        "from": "N-12-3",
+        "to": "N-12-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.05,
+        "name": "13号纵路 4—5"
+      },
+      {
+        "id": "R-V-12-4",
+        "from": "N-12-4",
+        "to": "N-12-5",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.16,
+        "name": "13号纵路 5—6"
+      },
+      {
+        "id": "R-V-12-5",
+        "from": "N-12-5",
+        "to": "N-12-6",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.05,
+        "name": "13号纵路 6—7"
+      },
+      {
+        "id": "R-V-12-6",
+        "from": "N-12-6",
+        "to": "N-12-7",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.16,
+        "name": "13号纵路 7—8"
+      },
+      {
+        "id": "R-V-12-7",
+        "from": "N-12-7",
+        "to": "N-12-8",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 34,
+        "traffic": 1.05,
+        "name": "13号纵路 8—9"
+      },
+      {
+        "id": "R-X-01",
+        "from": "N-1-1",
+        "to": "N-4-3",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 62,
+        "traffic": 0.89,
+        "name": "科创快速路"
+      },
+      {
+        "id": "R-X-02",
+        "from": "N-10-5",
+        "to": "N-8-7",
+        "status": "open",
+        "lanes": 3,
+        "speedLimit": 58,
+        "traffic": 0.93,
+        "name": "滨江联络线"
+      },
+      {
+        "id": "R-X-03",
+        "from": "N-5-7",
+        "to": "N-7-4",
+        "status": "open",
+        "lanes": 2,
+        "speedLimit": 46,
+        "traffic": 1.04,
+        "name": "老城联络通道"
+      }
+    ],
+    "zones": [
+      {
+        "id": "Z-01",
+        "name": "科创智造园",
+        "x": 0.7,
+        "y": 0.7,
+        "width": 6.6,
+        "height": 4.25,
+        "kind": "innovation"
+      },
+      {
+        "id": "Z-02",
+        "name": "滨江商务区",
+        "x": 7.25,
+        "y": 0.7,
+        "width": 6.6,
+        "height": 4.25,
+        "kind": "business"
+      },
+      {
+        "id": "Z-03",
+        "name": "老城生活区",
+        "x": 0.7,
+        "y": 5.2,
+        "width": 6.6,
+        "height": 4.05,
+        "kind": "residential"
+      },
+      {
+        "id": "Z-04",
+        "name": "滨江生态带",
+        "x": 7.25,
+        "y": 5.2,
+        "width": 6.6,
+        "height": 4.05,
+        "kind": "waterfront"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "FIRE-01",
+      "label": "滨江消防一号",
+      "type": "fire",
+      "nodeId": "N-2-2"
+    },
+    {
+      "id": "FIRE-02",
+      "label": "科创消防二号",
+      "type": "fire",
+      "nodeId": "N-10-6"
+    },
+    {
+      "id": "AMB-01",
+      "label": "老城救护一号",
+      "type": "ambulance",
+      "nodeId": "N-3-6"
+    },
+    {
+      "id": "AMB-02",
+      "label": "商务救护二号",
+      "type": "ambulance",
+      "nodeId": "N-8-2"
+    },
+    {
+      "id": "AMB-03",
+      "label": "机动救护三号",
+      "type": "ambulance",
+      "nodeId": "N-6-5"
+    },
+    {
+      "id": "SUP-01",
+      "label": "北区物资车",
+      "type": "supply",
+      "nodeId": "N-1-5"
+    },
+    {
+      "id": "SUP-02",
+      "label": "滨江物资车",
+      "type": "supply",
+      "nodeId": "N-9-1"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "INC-DEMO-FIRE",
+      "type": "fire",
+      "title": "滨江智慧物流园火情",
+      "nodeId": "N-8-4",
+      "severity": 3,
+      "createdAt": 0
+    },
+    {
+      "id": "INC-DEMO-MED",
+      "type": "medical",
+      "title": "老城社区人员急救",
+      "nodeId": "N-4-2",
+      "severity": 2,
+      "createdAt": 0
+    }
+  ],
+  "settings": {
+    "tickMinutes": 1,
+    "maxTimeMinutes": 60,
+    "targetResponseMinutes": 8,
+    "pathAlgorithm": "astar",
+    "assignmentStrategy": "balanced",
+    "startTime": "08:30"
+  }
+}
